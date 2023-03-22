@@ -1,0 +1,65 @@
+/* eslint-disable no-unused-expressions */
+const datas = [
+  {
+    id: 'J8s8aHcj9v_EIxZV',
+    name: 'Buku A',
+    year: 2010,
+    author: 'John Doe',
+    summary: 'Lorem ipsum dolor sit amet',
+    publisher: 'Dicoding Indonesia',
+    pageCount: 100,
+    readPage: 100,
+    finished: true,
+    reading: true,
+    insertedAt: '2023-03-18T16:06:47.143Z',
+    updatedAt: '2023-03-18T16:06:47.143Z',
+  },
+  {
+    id: 'B3WeYAjRPF6ytc5k',
+    name: 'Kelas Dicoding',
+    year: 2010,
+    author: 'John Doe',
+    summary: 'Lorem ipsum dolor sit amet',
+    publisher: 'Dicoding Indonesia',
+    pageCount: 100,
+    readPage: 99,
+    finished: false,
+    reading: true,
+    insertedAt: '2023-03-18T16:06:47.230Z',
+    updatedAt: '2023-03-18T16:06:47.230Z',
+  },
+  {
+    id: 'BvCVvxQGHELmGW4_',
+    name: 'dicoding Jobs',
+    year: 2010,
+    author: 'John Doe',
+    summary: 'Lorem ipsum dolor sit amet',
+    publisher: 'Dicoding Indonesia',
+    pageCount: 100,
+    readPage: 0,
+    finished: false,
+    reading: false,
+    insertedAt: '2023-03-18T16:06:47.340Z',
+    updatedAt: '2023-03-18T16:06:47.340Z',
+  },
+  {
+    id: 'aLULkDsQZtVbSEWK',
+    name: 'Buku A',
+    year: 2010,
+    author: 'John Doe',
+    summary: 'Lorem ipsum dolor sit amet',
+    publisher: 'Dicoding Indonesia',
+    pageCount: 100,
+    readPage: 0,
+    finished: false,
+    reading: false,
+    insertedAt: '2023-03-18T16:06:47.435Z',
+    updatedAt: '2023-03-18T16:06:47.435Z',
+  }];
+
+const data = datas.filter((d) => d.reading === false);
+const test = data.map((d) => ({
+  id: d.id,
+  name: d.name,
+}));
+console.log(test);
